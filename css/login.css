@@ -1,0 +1,9 @@
+body {
+    background-image: url(../imagens/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.input-text {
+    width: 500px;
+}
