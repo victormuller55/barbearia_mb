@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-expand-lg  header" style="background-color: #2C2C2C;">
           <div class="container">
             <a href="index.html"><img class="navbar-brand" src="imagens/logo2.png" alt="" width="40" ></a>
@@ -26,11 +26,12 @@
             </div>
           </div>
         </nav>
-    </header>
+    </header> -->
     <main>
-      <form>
-          <input type="text" class="form-control input-text" placeholder="Digite seu login">
-          <input type="password" class="form-control input-text" placeholder="Digite a senha">
+      <form method="POST" action="php/login.php">
+          <input type="email" name="email" class="form-control input-text" placeholder="Digite seu login">
+          <input type="password" name="senha" class="form-control input-text" placeholder="Digite a senha">
+          <input type="submit">
       </form>
     </main>
 </body>
