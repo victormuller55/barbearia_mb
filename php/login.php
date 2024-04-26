@@ -1,5 +1,4 @@
 <?php 
-
 include("objects/usuario_model.php");
 
 $email = $_POST['email'];
@@ -10,5 +9,9 @@ $usuario = new UsuarioModel();
 $usuario->email = $email;
 $usuario->senha = $senha;
 
-$usuario->login();
+if ($usuario->login()) {
+    header("Location: ../index.html");
+} else {
+    header("Location: ../index.php?error=login_failed");
+}
 ?>
