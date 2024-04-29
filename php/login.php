@@ -10,7 +10,7 @@ $usuario->email = $email;
 $usuario->senha = $senha;
 
 if ($usuario->login()) {
-    header("Location: ../index.html");
+    header("Location: ../options/services.php");
 } else {
     header("Location: ../index.php?error=login_failed");
 }

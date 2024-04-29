@@ -1,0 +1,57 @@
+.header {
+    background-color: #2B488A ;
+}
+
+.nav-option {
+    margin-right: 5px;
+    text-align: center;
+}
+
+#sair {
+    border-radius: 5px;
+    background-color: red;
+}
+
+#sair:hover {
+    border-radius: 5px;
+    background-color: rgb(158, 1, 1);
+}
+
+.button-table {
+    height: 35px;
+    background-color: rgb(46, 46, 46);
+    font-size: 12px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.button-table:hover {
+    background-color: #2B488A;
+}
+
+table {
+    background-color: rgb(232, 232, 232);
+    width: 100%;
+}
+
+thead {
+    background-color: #2B488A;
+    color: white;
+}
+
+th {
+    text-align: center;
+    border: solid 1px white;
+    color: white;
+    width: calc(100% / 8);
+    font-size: 14px;
+    height: 35px;
+}
+
+td {
+    text-align: center;
+    border: solid 1px white;
+    width: calc(100% / 8);
+    font-size: 14px;
+    height: 35px;
+}
