@@ -31,7 +31,7 @@
 
 table {
     background-color: rgb(232, 232, 232);
-    width: 100%;
+    width: 100% !important;
 }
 
 thead {

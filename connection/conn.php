@@ -1,7 +1,7 @@
 <?php 
 $server = "localhost";
 $user = "root";
-$password = ""; // senac: sem senha, dell: root
+$password = "root"; // senac: sem senha, dell: root
 $db_name = "db_barbearia";
 
 try {
