@@ -1,7 +1,7 @@
 <?php 
 $server = "localhost";
 $user = "root";
-$password = "root"; // senac: sem senha, dell: root
+$password = ""; // senac: sem senha, dell: root
 $db_name = "db_barbearia";
 
 try {
@@ -9,6 +9,5 @@ try {
 } catch (Exception $e) {
     die("Erro ao conectar: $e");
 }
-
 
 ?>

@@ -1,3 +1,11 @@
+<?php 
+include("../../php/model/servico_model.php");
+
+$servico = new ServicoModel();
+$servicos = $servico->buscarServicos()
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -30,28 +38,31 @@
               <table border="1">
                 <thead>
                   <tr>
-                    <th>N° do Serviço</th>
                     <th>Nome</th>
                     <th>Funcionario</th>
                     <th>Serviço</th>
-                    <th>Hora / Data</th>
+                    <th>Data / Hora</th>
                     <th>Observações</th>
-                    <th>Editar serviço</th>
-                    <th>Excluir serviço</th>
+                    <th></th>
+                    <th></th>
                   </tr>
                 </thead>
+
+                <?php foreach ($servicos as $row_servico) :?>
+
                 <tbody>
                   <tr>
-                    <td>1</td>
-                    <td>Victor Muller</td>
-                    <td>Vitor Bertoldo</td>
-                    <td>Corte de Cabelo</td>
-                    <td>27/04/2023 13:00</td>
-                    <td>Cortar Certo</td>
+                    <td><?=$row_servico['nome_servico']?></td>
+                    <td><?=$row_servico['funcionario_servico']?></td>
+                    <td><?=$row_servico['servico']?></td>
+                    <td><?=$row_servico['data_hora']?></td>
+                    <td><?=$row_servico['obs_servico']?></td>
                     <td><a href="">Alterar</a></td>
                     <td><a href="">Excluir</a></td>
                   </tr>
                 </tbody>
+
+                <?php endforeach;?>
               </table>
       </div>
 </body>
