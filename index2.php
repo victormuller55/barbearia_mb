@@ -5,49 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Testando coisas</title>
+    <style>
+
+      
+      .sidebar {
+        width: 250px;
+        height: 100vh;
+        background-color: #2B488A;
+      }
+
+      .option {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 5px;
+        background-color: #1A2E5C;
+      }
+
+      .option:hover {
+        background-color: #142345;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+    </style>
 </head>
 <body>
-    <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px; height:100vh">
-    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-4">Sidebar</span>
-    </a>
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          Dashboard
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-          Orders
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-          Products
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-          Customers
-        </a>
-      </li>
-    </ul>
-    <hr>
+  <div class="container-fluid">
+     <div class="row">
+        <div class="sidebar">
+          <div class="text-center mt-4">
+            <img src="imagens/logo.png" alt="" width="200">
+          </div>
+          <hr>
+          <ul style="list-style: none;">
+            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Inicio</div></a></li>
+            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Serviços</div></a></li>
+            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Funcionarios</div></a></li>
+            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
+            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Sair da Conta</div></a></li>
+          </ul>
+        </div>
+     </div>
   </div>
-    </div>
-
 </body>
 </html>
