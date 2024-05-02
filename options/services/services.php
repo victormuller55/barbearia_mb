@@ -19,41 +19,11 @@
   <div>
 
   </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark " style="width: 280px; height: 100vh">
-              <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-                <span class="fs-4">Sidebar</span>
-              </a>
-              <hr>
-              <ul class="nav nav-pills flex-column mb-auto">
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-                    Orders
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-                    Products
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="nav-link text-white">
-                    <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-                    Customers
-                  </a>
-                </li>
-              </ul>
-              <hr>
-          	</div>
            <div>
               <div class="container-fluid mb-3">
                 <div class="row">
                     <button class="btn btn-primary button-table shadow-none" type="submit">Apagar</button>
-                    <button class="btn btn-primary button-table shadow-none" type="submit">Adicionar</button>
+                    <a href="adicionar_services.php"><button class="btn btn-primary button-table shadow-none" type="submit">Adicionar</button></a>
                     <button class="btn btn-primary button-table shadow-none" type="submit">Filtros</button>
                 </div>
               </div>
@@ -83,8 +53,6 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </div>
       </div>
 </body>
 </html>
