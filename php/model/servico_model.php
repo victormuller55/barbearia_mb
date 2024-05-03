@@ -16,6 +16,7 @@ class ServicoModel {
 
         try {
             mysqli_query($conn, $sql);
+            header("location:../../menu/servicos_page/vizualizar_servicos.php");
         } catch (Exception $e) {
             die("Erro ao agendar: $e");
         }   
@@ -49,7 +50,7 @@ class ServicoModel {
         try {
             $sql = "DELETE FROM tbl_servico WHERE id_servico=$id";
             mysqli_query($conn, $sql);
-            header("location:../../options\services\services.php");
+            header("location: ../../menu/servicos_page/vizualizar_servicos.php");
         } catch (Exception $e) {
             die("Erro ao excluir serviço: $e");
         }

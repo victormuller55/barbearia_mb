@@ -1,6 +1,6 @@
  <?php 
 
-include("objects/servico_model.php");
+include("../model/servico_model.php");
 
 $servico = new ServicoModel();
 

@@ -1,35 +1,19 @@
-.header {
-    background-color: #2B488A ;
-}
-
-.nav-option {
-    margin-right: 5px;
-    text-align: center;
-}
-
-#sair {
-    border-radius: 5px;
-    background-color: red;
-}
-
-#sair:hover {
-    border-radius: 5px;
-    background-color: rgb(158, 1, 1);
-}
-
 .button-table {
     height: 35px;
-    background-color: rgb(46, 46, 46);
+    border-radius: 360px;
+    background-color: #2B488A;
     font-size: 12px;
-    width: 100px;
+    width: 200px;
     margin-right: 10px;
 }
 
 .button-table:hover {
-    background-color: #2B488A;
+    font-weight: bold;
+    background-color: #142345;
 }
 
 table {
+    border-radius: 10px;
     background-color: rgb(232, 232, 232);
     width: 100% !important;
 }
@@ -39,7 +23,16 @@ thead {
     color: white;
 }
 
+.th-first {
+    border-top-left-radius: 10px;
+}
+
+.th-last {
+    border-top-right-radius: 10px;
+}
+
 th {
+    border-top: 20px;
     text-align: center;
     border: solid 1px white;
     color: white;
@@ -54,4 +47,9 @@ td {
     width: calc(100% / 8);
     font-size: 14px;
     height: 35px;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
 }

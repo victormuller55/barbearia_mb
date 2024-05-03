@@ -1,0 +1,39 @@
+ul, ol {
+  margin: 0;
+  padding: 0; /* Além de remover a margem, é comum remover também o preenchimento padrão */
+}
+
+.logo {
+  width: 150px;
+  transition: transform 0.1s ease; /* Adicionando transição para a transformação */
+}
+
+.logo:active {
+  transform: scale(1.1); /* Aumentando temporariamente o tamanho ao clicar */
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2B488A;
+}
+
+  .option {
+    width: 80%;
+    font-size: 14px;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #1A2E5C;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .option:hover {
+    background-color: #142345;
+    width: 90%;
+    border-right: 2px solid #fff;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }

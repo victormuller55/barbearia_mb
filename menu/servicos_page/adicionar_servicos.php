@@ -17,15 +17,12 @@
             text-align: center;
         }
 
-        input[type="text"] {
-
-        }
     </style>
 </head>
 <body>
     <h1>Agendamento</h1>    
 
-    <form  method="post" action="../../php/servicos.php">
+    <form  method="post" action="../../php/servicos_crud/servicos_post.php">
         <input type="text" name="cliente_servico" placeholder="Digite o nome do cliente"><br>
         <input type="text" name="funcionario_servico" placeholder="Digite o nome do funcionário"><br>
         <input type="text" name="servico" placeholder="Digite o serviço"><br>
