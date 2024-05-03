@@ -1,17 +1,3 @@
-.button-table {
-    height: 35px;
-    border-radius: 360px;
-    background-color: #2B488A;
-    font-size: 12px;
-    width: 200px;
-    margin-right: 10px;
-}
-
-.button-table:hover {
-    font-weight: bold;
-    background-color: #142345;
-}
-
 table {
     border-radius: 10px;
     background-color: rgb(232, 232, 232);
@@ -21,14 +7,6 @@ table {
 thead {
     background-color: #2B488A;
     color: white;
-}
-
-.th-first {
-    border-top-left-radius: 10px;
-}
-
-.th-last {
-    border-top-right-radius: 10px;
 }
 
 th {
@@ -54,6 +32,10 @@ td {
     flex-wrap: nowrap;
 }
 
-.title {
-    color: #2B488A;
+.th-first {
+    border-top-left-radius: 10px;
+}
+
+.th-last {
+    border-top-right-radius: 10px;
 }

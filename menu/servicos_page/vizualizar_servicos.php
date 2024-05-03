@@ -4,7 +4,7 @@
    $servico = new ServicoModel();
    $servicos = $servico->buscarServicos()
    
-   ?>
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -38,6 +38,8 @@
           </div>
           <div class="p-3" style="width:90%">
             <div class="container-fluid mb-3">
+               <h3 class="title">Serviços Agendados</h3>
+               <hr>
                <div class="row">
                <div>
                   <button class="btn btn-primary button-table shadow-none" type="submit">APAGAR</button>
