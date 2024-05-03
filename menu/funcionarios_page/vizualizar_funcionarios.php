@@ -10,7 +10,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vizualizar Serviços</title>
+    <title>Funcionarios | Scissor</title>
+    <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/funcionarios.css">
     <link rel="stylesheet" href="../../css/menu.css">
@@ -35,9 +36,7 @@
             <div class="container-fluid mb-3">
                <div class="row">
                <div>
-                  <button class="btn btn-primary button-table shadow-none" type="submit">APAGAR</button>
                   <a href="adicionar_servicos.php"><button class="btn btn-primary button-table shadow-none" type="submit">ADICIONAR</button></a>
-                  <button class="btn btn-primary button-table shadow-none" type="submit">FILTROS</button>
                </div>
                </div>
             </div>

@@ -24,7 +24,7 @@
                             Por favor, verifique suas credenciais.
                         </div>
                     <?php endif; ?>
-                    <input type="email" name="email" class="form-control input mb-2" placeholder="seunome@exemplo.com.br" required>
+                    <input type="email" name="email" class="form-control input mb-1" placeholder="seunome@exemplo.com.br" required>
                     <input type="password" name="senha" class="form-control input mb-4" placeholder="***********" required>
                     <button type="submit" class="btn btn-primary input">ENTRAR</button>
                 </form>
