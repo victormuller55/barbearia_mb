@@ -37,7 +37,7 @@ $funcionario = $funcionarioClass->buscarFuncionarioPorID($id);
                </ul>
             </div>
             <form style="width:90%" class="p-3 " method="post" action="../../php/funcionarios_crud/funcionario_update.php">
-                <h4 class="mb-4 title">Cadastrar Novo Funcionario</h4>
+                <h4 class="mb-4 title"><?= $funcionario['nome_funcionario'] ?></h4>
                 <hr>
                 <input type="hidden" name="id_funcionario" value="<?= $funcionario['id_funcionario'] ?>">
                 <input class="input mb-2" type="text" name="nome_funcionario" placeholder="Digite o Nome" value="<?= $funcionario['nome_funcionario'] ?>" required>
@@ -45,7 +45,7 @@ $funcionario = $funcionarioClass->buscarFuncionarioPorID($id);
                 <input class="input mb-2" type="text" name="salario_funcionario" placeholder="Digite o Salario" value="<?= $funcionario['salario_funcionario'] ?>" required>
                 <input class="input mb-2" type="text" name="telefone_funcionario" placeholder="Digite o Telefone" value="<?= $funcionario['telefone_funcionario'] ?>" required><br>
                 <input class="input mb-2" type="text" name="endereco_funcionario" placeholder="Digite o Endereço" value="<?= $funcionario['endereco_funcionario'] ?>" required><br>
-                <button type="submit" class="btn btn-primary input">CADASTRAR</button>
+                <button type="submit" class="btn btn-primary input">SALVAR DADOS</button>
             </form>
         </div>
     </div>    
