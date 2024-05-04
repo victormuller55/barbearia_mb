@@ -12,14 +12,14 @@
     background-color: #142345;
 }
 
-button.input {
+button.input.form {
     width: 1005px;
     font-weight: bold;
     font-size: 13px;
     background-color: #2B488A;
 }
 
-button.input:hover {
+button.input.form:hover {
     background-color: #1c2f5b;
 }
 
@@ -75,9 +75,8 @@ td {
     background-color: rgb(233, 233, 233);
 }
 
-.input.textarea {
+.input.endereco {
     width: 1005px;
-    height: 80px;
 }
 
 .title {
