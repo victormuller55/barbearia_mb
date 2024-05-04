@@ -21,15 +21,20 @@
       <script src="../../script/confirmar_exclusao.js"></script>
    </head>
    <body>
+   <header>
+      <nav class="navbar navbar-light justify-content-between header-mb">
+         <img src="../../imagens/logo.png" alt="" class="logo">
+         <form class="form-inline">
+            <input class="pl-2 mr-3" type="search" placeholder="Digite algo para pesquisar..." aria-label="Search">
+            <button type="submit" class="btn btn-primary input">Pesquisar</button>
+         </form>
+      </nav>
+   </header>
    <div class="container-fluid">
       <div class="row flex-row">
          <div class="sidebar">
-            <div class="text-center mt-4">
-              <img src="../../imagens/logo.png" alt="" class="logo">
-            </div>
-            <hr>
             <ul style="list-style: none;">
-              <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Inicio</div></a></li>
+              <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
               <li><a style="text-decoration: none; color: white;" href="vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
               <li><a style="text-decoration: none; color: white;" href="../funcionarios_page/vizualizar_funcionarios.php"><div class="option">Funcionarios</div></a></li>
               <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
@@ -37,6 +42,8 @@
             </ul>
           </div>
             <div class="p-3" style="width:90%">
+               <h3 class="title">Serviços Agendados</h3>
+               <hr>
                <div class="container-fluid mb-3">
                   <div class="row">
                      <div>

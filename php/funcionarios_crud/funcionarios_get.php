@@ -2,6 +2,10 @@
    include("../../php/model/funcionario_model.php");
    
    $funcionarios = new FuncionarioModel();
-   $funcionarios = $funcionarios->buscarFuncionarios()
+   $funcionarios = $funcionarios->buscarFuncionarios();
+
+   session_start();
+
+   $nomeUsuario = $_SESSION["nome"];
    
 ?>

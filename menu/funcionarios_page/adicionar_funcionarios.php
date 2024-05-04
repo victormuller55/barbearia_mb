@@ -36,6 +36,6 @@
                 <button type="submit" class="btn btn-primary input">CADASTRAR</button>
             </form>
         </div>
-    </div>    
+    </div>
 </body>
 </html>

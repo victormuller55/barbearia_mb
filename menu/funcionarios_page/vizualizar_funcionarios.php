@@ -1,33 +1,40 @@
-<?php include("../../php/funcionarios_crud/funcionarios_get.php"); ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcionarios | Scissor</title>
-    <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
-    <script src="../../script/confirmar_exclusao.js"></script>
-    <link rel="stylesheet" href="../../css/bootstrap.css">
-    <link rel="stylesheet" href="../../css/funcionarios.css">
-    <link rel="stylesheet" href="../../css/menu.css">
-</head>
-<body>
-<div class="container-fluid">
-     <div class="row flex-row">
-        <div class="sidebar">
-          <div class="text-center mt-4">
-            <img src="../../imagens/logo.png" alt="" class="logo">
-          </div>
-          <hr>
+   <?php include("../../php/funcionarios_crud/funcionarios_get.php"); ?>
+   <!DOCTYPE html>
+   <html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Funcionarios | Scissor</title>
+      <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
+      <script src="../../script/confirmar_exclusao.js"></script>
+      <link rel="stylesheet" href="../../css/bootstrap.css">
+      <link rel="stylesheet" href="../../css/funcionarios.css">
+      <link rel="stylesheet" href="../../css/menu.css">
+   </head>
+   <body>
+   <header>
+      <nav class="navbar navbar-light justify-content-between header-mb">
+         <img src="../../imagens/logo.png" alt="" class="logo">
+         <form class="form-inline">
+            <input class="pl-2 mr-3" type="search" placeholder="Digite algo para pesquisar..." aria-label="Search">
+            <button type="submit" class="btn btn-primary input">Pesquisar</button>
+         </form>
+      </nav>
+   </header>
+   <div class="container-fluid">
+      <div class="row flex-row">
+         <div class="sidebar">
           <ul style="list-style: none;">
-            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Inicio</div></a></li>
+            <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
             <li><a style="text-decoration: none; color: white;" href="../servicos_page/vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
             <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Funcionarios</div></a></li>
             <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
             <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Sair da Conta</div></a></li>
-          </ul>
+          </ul>   
         </div>
         <div class="p-3" style="width:90%">
+            <h3 class="title">Funcionarios</h3>
+            <hr>
             <div class="container-fluid mb-3">
                <div class="row">
                <div>

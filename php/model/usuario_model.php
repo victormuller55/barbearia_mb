@@ -20,6 +20,11 @@ class UsuarioModel {
                 $user = mysqli_fetch_array($result);
 
                 if ($this->senha == $user["senha_usuario"]) {
+
+                    session_start();
+
+                    $_SESSION["nome"] = $user["nome_usuario"];
+
                     return $user;
                 } else {
                     echo "Senha incorreta.";
