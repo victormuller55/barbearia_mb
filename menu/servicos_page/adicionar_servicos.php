@@ -18,7 +18,6 @@
             background-color: #1c2f5b;
         }
 
-
     </style>
     <link rel="stylesheet" href="../../css/services.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
@@ -48,9 +47,7 @@
                 <input class="input mb-2" type="text" name="servico" placeholder="Digite o serviço" required>
                 <input class="input mb-2" type="text" name="data_hora" placeholder="Digite a data/hora" required><br>
                 <textarea row="3" class="input textarea mb-2" type="text" name="obs" placeholder="Observaçôes" required></textarea><br>
-            
                 <button type="submit" class="btn btn-primary input">CADASTRAR NOVO SERVIÇO</button>
-        
             </form>
         </div>
     </div>    

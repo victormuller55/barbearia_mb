@@ -1,11 +1,7 @@
 <?php 
-$server = "localhost";
-$user = "root";
-$password = "root"; // senac: sem senha, dell: root
-$db_name = "db_barbearia";
 
 try {
-    $conn = mysqli_connect($server, $user, $password, $db_name);
+    $conn = mysqli_connect("localhost", "root", "root", "db_barbearia");
 } catch (Exception $e) {
     die("Erro ao conectar: $e");
 }

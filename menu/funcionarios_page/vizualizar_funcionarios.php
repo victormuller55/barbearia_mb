@@ -1,10 +1,4 @@
-<?php 
-   include("../../php/model/servico_model.php");
-   
-   $servico = new ServicoModel();
-   $servicos = $servico->buscarServicos()
-   
-?>
+<?php include("../../php/funcionarios_crud/funcionarios_get.php"); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Funcionarios | Scissor</title>
     <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
+    <script src="../../script/confirmar_exclusao.js"></script>
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/funcionarios.css">
     <link rel="stylesheet" href="../../css/menu.css">
@@ -36,7 +31,7 @@
             <div class="container-fluid mb-3">
                <div class="row">
                <div>
-                  <a href="adicionar_servicos.php"><button class="btn btn-primary button-table shadow-none" type="submit">ADICIONAR</button></a>
+                  <a href="adicionar_funcionarios.php"><button class="btn btn-primary button-table shadow-none" type="submit">ADICIONAR</button></a>
                </div>
                </div>
             </div>
@@ -44,27 +39,33 @@
             <thead>
                <tr>
                   <th class="th-first">Nome</th>
-                  <th>Funcionario</th>
-                  <th>Serviço</th>
-                  <th>Data / Hora</th>
-                  <th>Observações</th>
+                  <th>CPF</th>
+                  <th>Salario</th>
+                  <th>Telefone</th>
+                  <th>Endereço</th>
                   <th>Alterar</th>
                   <th class="th-last">Excluir</th>
                </tr>
             </thead>
-            <?php foreach ($servicos as $row_servico) :?>
-            <tbody>
-               <tr>
-                  <td><?=$row_servico['cliente_servico']?></td>
-                  <td><?=$row_servico['funcionario_servico']?></td>
-                  <td><?=$row_servico['servico']?></td>
-                  <td><?=$row_servico['data_hora']?></td>
-                  <td><?=$row_servico['obs_servico']?></td>
-                  <td><a href="">Alterar</a></td>
-                  <td><a onclick="confirmaExclusaoServico(<?=$row_servico['id_servico']?>)" href="#">Excluir</a></td>
-               </tr>
-            </tbody>
-            <?php endforeach;?>
+               <tbody>
+               <?php if (empty($funcionarios)) : ?>
+                  <tr>
+                        <td colspan="7">Não há funcionários cadastrados.</td>
+                  </tr>
+               <?php else : ?>
+                  <?php foreach ($funcionarios as $row_funcionarios) : ?>
+                        <tr>
+                           <td><?= $row_funcionarios['nome_funcionario'] ?></td>
+                           <td><?= $row_funcionarios['cpf_funcionario'] ?></td>
+                           <td><?= $row_funcionarios['salario_funcionario'] ?></td>
+                           <td><?= $row_funcionarios['telefone_funcionario'] ?></td>
+                           <td><?= $row_funcionarios['endereco_funcionario'] ?></td>
+                           <td><a style="text-decoration: none; color: black"href="atualizar_funcionarios.php?id_funcionario=<?= $row_funcionarios['id_funcionario'] ?>">Alterar</a></td>
+                           <td><a style="text-decoration: none; color: black" onclick="confirmaExclusaoFuncionario(<?= $row_funcionarios['id_funcionario'] ?>)" href="#">Excluir</a></td>
+                        </tr>
+                  <?php endforeach; ?>
+               <?php endif; ?>
+               </tbody>
             </table>
           </div>
      </div>

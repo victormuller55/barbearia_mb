@@ -28,7 +28,7 @@ class ServicoModel {
 
         $sql = "SELECT * FROM tbl_servico";
         $result = mysqli_query($conn, $sql);
-        $clientes = array();
+
 
         try {
             if (mysqli_num_rows($result) > 0) {
