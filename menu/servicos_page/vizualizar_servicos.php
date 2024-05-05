@@ -1,10 +1,4 @@
-<?php 
-   include("../../php/model/servico_model.php");
-   
-   $servico = new ServicoModel();
-   $servicos = $servico->buscarServicos()
-   
-?>
+<?php include("../../php/servicos_crud/servicos_get.php"); ?>
 <!DOCTYPE html>
 <html lang="pt-br">
    <head>
@@ -24,8 +18,8 @@
    <header>
       <nav class="navbar navbar-light justify-content-between header-mb">
          <img src="../../imagens/logo.png" alt="" class="logo">
-         <form class="form-inline">
-            <input class="pl-2 mr-3" type="search" placeholder="Digite algo para pesquisar..." aria-label="Search">
+         <form class="form-inline" action="#" method="GET">
+            <input class="pl-2 mr-3" type="search" name="query" placeholder="Digite algo para pesquisar..." aria-label="Search">
             <button type="submit" class="btn btn-primary input">Pesquisar</button>
          </form>
       </nav>

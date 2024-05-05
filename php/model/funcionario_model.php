@@ -90,6 +90,26 @@ class FuncionarioModel {
             die("Erro ao buscar funcionarios: $e");
         }
     }
+
+    public function buscarFuncionario($query) {
+        include("../../conexao_db/conexao.php");
+    
+        $sql = "SELECT * FROM tbl_funcionario WHERE 
+                nome_funcionario LIKE '%$query%' OR 
+                cpf_funcionario LIKE '%$query%' OR 
+                salario_funcionario LIKE '%$query%' OR 
+                telefone_funcionario LIKE '%$query%' OR 
+                endereco_funcionario LIKE '%$query%'";
+    
+        try {
+            $result = mysqli_query($conn, $sql);
+        
+            return mysqli_fetch_all($result, MYSQLI_ASSOC);
+        } catch(Exception $e) {
+            die("Erro ao buscar funcionário: $e");
+        }
+    }    
+    
 }
 
 ?>

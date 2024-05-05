@@ -1,4 +1,4 @@
-   <?php include("../../php/funcionarios_crud/funcionarios_get.php"); ?>
+   <?php include("../../php/funcionarios_crud/funcionario_get.php"); ?>
    <!DOCTYPE html>
    <html lang="pt-br">
    <head>
@@ -15,8 +15,8 @@
    <header>
       <nav class="navbar navbar-light justify-content-between header-mb">
          <img src="../../imagens/logo.png" alt="" class="logo">
-         <form class="form-inline">
-            <input class="pl-2 mr-3" type="search" placeholder="Digite algo para pesquisar..." aria-label="Search">
+         <form class="form-inline" action="#" method="GET">
+            <input class="pl-2 mr-3" type="search" name="query" placeholder="Digite algo para pesquisar..." aria-label="Search">
             <button type="submit" class="btn btn-primary input">Pesquisar</button>
          </form>
       </nav>
@@ -57,7 +57,7 @@
                <tbody>
                <?php if (empty($funcionarios)) : ?>
                   <tr>
-                        <td colspan="7">Não há funcionários cadastrados.</td>
+                        <td colspan="7">Nenhum funcionario encontrado.</td>
                   </tr>
                <?php else : ?>
                   <?php foreach ($funcionarios as $row_funcionarios) : ?>

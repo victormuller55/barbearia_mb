@@ -5,34 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento da Serviços | Scissor</title>
     <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
-    <style>
-
-        button.input {
-            width: 1005px;
-            font-weight: bold;
-            font-size: 13px;
-            background-color: #2B488A;
-        }
-
-        button.input:hover {
-            background-color: #1c2f5b;
-        }
-
-    </style>
     <link rel="stylesheet" href="../../css/services.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/menu.css">
 </head>
 <body>
+    <header>
+      <nav class="navbar navbar-light justify-content-between header-mb">
+         <img src="../../imagens/logo.png" alt="" class="logo">
+      </nav>
+   </header>
     <div class="container-fluid">
         <div class="row flex-row">
             <div class="sidebar">
-               <div class="text-center mt-4">
-                    <img src="../../imagens/logo.png" alt="" class="logo">
-               </div>
-               <hr>
                <ul style="list-style: none;">
-                    <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Inicio</div></a></li>
+                    <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="../funcionarios_page/vizualizar_funcionarios.php"><div class="option">Funcionarios</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
@@ -47,7 +34,7 @@
                 <input class="input mb-2" type="text" name="servico" placeholder="Digite o serviço" required>
                 <input class="input mb-2" type="text" name="data_hora" placeholder="Digite a data/hora" required><br>
                 <textarea row="3" class="input textarea mb-2" type="text" name="obs" placeholder="Observaçôes" required></textarea><br>
-                <button type="submit" class="btn btn-primary input">CADASTRAR NOVO SERVIÇO</button>
+                <button type="submit" class="btn btn-primary input form">CADASTRAR NOVO SERVIÇO</button>
             </form>
         </div>
     </div>    

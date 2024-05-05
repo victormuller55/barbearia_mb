@@ -57,6 +57,25 @@ class ServicoModel {
 
     }
 
+    public function buscarServico($query) {
+        include("../../conexao_db/conexao.php");
+    
+        $sql = "SELECT * FROM tbl_servico WHERE 
+                cliente_servico LIKE '%$query%' OR 
+                funcionario_servico  LIKE '%$query%' OR 
+                servico LIKE '%$query%' OR 
+                data_hora LIKE '%$query%' OR 
+                obs_servico LIKE '%$query%'";
+    
+        try {
+            $result = mysqli_query($conn, $sql);
+        
+            return mysqli_fetch_all($result, MYSQLI_ASSOC);
+        } catch(Exception $e) {
+            die("Erro ao buscar serviços: $e");
+        }
+    } 
+
 
 }
 ?>
