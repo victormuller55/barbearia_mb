@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
-    <title>Adicionar Funcionarios | Scissor</title>
+    <title>Adicionar Funcionarios | MB Barbearia</title>
     <link rel="stylesheet" href="../../css/funcionarios.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/menu.css">
@@ -22,7 +22,7 @@
                     <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="../funcionarios_page/vizualizar_funcionarios.php"><div class="option">Funcionarios</div></a></li>
-                    <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
+                    <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option">Meu Perfil</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Sair da Conta</div></a></li>
                </ul>
             </div>
@@ -33,7 +33,7 @@
                 <input class="input mb-2" type="text" name="cpf_funcionario" placeholder="Digite o CPF" required><br>
                 <input class="input mb-2" type="text" name="salario_funcionario" placeholder="Digite o Salario" required>
                 <input class="input mb-2" type="text" name="telefone_funcionario" placeholder="Digite o Telefone" required><br>
-                <input class="input mb-2" type="text" name="endereco_funcionario" placeholder="Digite o Endereço" required><br>
+                <input class="input mb-2 endereco" type="text" name="endereco_funcionario" placeholder="Digite o Endereço" required><br>
                 <button type="submit" class="btn btn-primary input form">CADASTRAR</button>
             </form>
         </div>

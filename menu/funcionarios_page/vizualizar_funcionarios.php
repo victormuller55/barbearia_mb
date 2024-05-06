@@ -4,12 +4,12 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Funcionarios | Scissor</title>
+      <title>Funcionarios | MB Barbearia</title>
       <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
       <script src="../../script/confirmar_exclusao.js"></script>
+      <link rel="stylesheet" href="../../css/menu.css">
       <link rel="stylesheet" href="../../css/bootstrap.css">
       <link rel="stylesheet" href="../../css/funcionarios.css">
-      <link rel="stylesheet" href="../../css/menu.css">
    </head>
    <body>
    <header>
@@ -27,8 +27,8 @@
           <ul style="list-style: none;">
             <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
             <li><a style="text-decoration: none; color: white;" href="../servicos_page/vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
-            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Funcionarios</div></a></li>
-            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
+            <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option">Funcionarios</div></a></li>
+            <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option">Meu Perfil</div></a></li>
             <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Sair da Conta</div></a></li>
           </ul>   
         </div>

@@ -4,7 +4,9 @@ ul, ol {
 }
 
 .logo {
-  width: 100px;
+  width: 130px;
+  margin-left: 50px;
+  margin-bottom: 5px;
   transition: transform 0.1s ease; /* Adicionando transição para a transformação */
 }
 
@@ -15,7 +17,7 @@ ul, ol {
 .sidebar {
     width: 250px;
     height: 100vh;
-    background-color: #2B488A;
+    background-color: #1A2E5C;
 }
 
   .option {
@@ -23,7 +25,7 @@ ul, ol {
     font-size: 14px;
     padding: 10px;
     margin-bottom: 5px;
-    background-color: #1A2E5C;
+    background-color: #142345;
     transition: width 0.3s ease-in-out;
   }
   

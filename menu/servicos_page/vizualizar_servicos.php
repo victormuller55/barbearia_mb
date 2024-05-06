@@ -3,7 +3,7 @@
 <html lang="pt-br">
    <head>
       <meta charset="UTF-8">
-      <title>Serviços | Scissor</title>
+      <title>Serviços | MB Barbearia   </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -31,7 +31,7 @@
               <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
               <li><a style="text-decoration: none; color: white;" href="vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
               <li><a style="text-decoration: none; color: white;" href="../funcionarios_page/vizualizar_funcionarios.php"><div class="option">Funcionarios</div></a></li>
-              <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
+              <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option">Meu Perfil</div></a></li>
               <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Sair da Conta</div></a></li>
             </ul>
           </div>

@@ -15,7 +15,7 @@ $funcionario = $funcionarioClass->buscarFuncionarioPorID($id);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
-    <title>Atualizar Funcionario | Scissor</title>
+    <title>Atualizar Funcionario | MB Barbearia</title>
     <link rel="stylesheet" href="../../css/funcionarios.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
     <link rel="stylesheet" href="../../css/menu.css">
@@ -33,7 +33,7 @@ $funcionario = $funcionarioClass->buscarFuncionarioPorID($id);
                     <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="../funcionarios_page/vizualizar_funcionarios.php"><div class="option">Funcionarios</div></a></li>
-                    <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
+                    <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option">Meu Perfil</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Sair da Conta</div></a></li>
                </ul>
             </div>

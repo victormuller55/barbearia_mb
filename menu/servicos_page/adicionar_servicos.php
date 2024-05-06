@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agendamento da Serviços | Scissor</title>
+    <title>Agendamento da Serviços | MB Barbearia</title>
     <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
     <link rel="stylesheet" href="../../css/services.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
@@ -22,7 +22,7 @@
                     <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="../funcionarios_page/vizualizar_funcionarios.php"><div class="option">Funcionarios</div></a></li>
-                    <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Meu Perfil</div></a></li>
+                    <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option">Meu Perfil</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Sair da Conta</div></a></li>
                </ul>
             </div>
