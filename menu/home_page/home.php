@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div style="width: 90%" class="p-4">
-              <h3 class="title">Bem-Vindo ao Scissor</h3>
+              <h3 class="title">Bem-vindo ao Scissor</h3>
               <p>Clique em uma das opções ao lado para começar a navegar</p>
             </div>
         </div>
