@@ -37,7 +37,7 @@ $funcionario = $funcionarioClass->buscarFuncionarioPorID($id);
                     <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option"><i class="fa-solid fa-user mr-3 ml-2"></i>Meu Perfil</div></a></li>
                </ul>
             </div>
-            <form style="width:90%" class="p-3 " method="post" action="../../php/funcionarios_crud/funcionario_update.php">
+            <form style="width:90%" class="p-3 " method="post" action="../../php/servico_crud/servicos_update.php">
                 <h4 class="mb-4 title"><?= $funcionario['nome_funcionario'] ?></h4>
                 <hr>
                 <input type="hidden" name="id_funcionario" value="<?= $funcionario['id_funcionario'] ?>">

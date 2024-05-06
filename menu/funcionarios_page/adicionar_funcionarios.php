@@ -26,17 +26,32 @@
                     <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option"><i class="fa-solid fa-user mr-3 ml-2"></i>Meu Perfil</div></a></li>
                 </ul>
             </div>
-            <form style="width:90%" class="p-3 " method="post" action="../../php/funcionarios_crud/funcionarios_post.php">
-                <h4 class="mb-4 title">Cadastrar Novo Funcionario</h4>
-                <hr>
-                <input class="input mb-2" type="text" name="nome_funcionario" placeholder="Digite o Nome" required>
-                <input class="input mb-2" type="text" name="cpf_funcionario" placeholder="Digite o CPF" required><br>
-                <input class="input mb-2" type="text" name="salario_funcionario" placeholder="Digite o Salario" required>
-                <input class="input mb-2" type="text" name="telefone_funcionario" placeholder="Digite o Telefone" required><br>
-                <input class="input mb-2 endereco" type="text" name="endereco_funcionario" placeholder="Digite o Endereço" required><br>
-                <button type="submit" class="btn btn-primary input form">CADASTRAR</button>
-            </form>
+            <div>
+                <img class="imagem-perfil mr-3 ml-3" src="<?php echo $imagem;?>" alt="">
+                <form id="uploadForm" class="escolher-imagem" action="../../php/funcionarios_crud/upload_imagem_funcionario.php" method="POST" enctype="multipart/form-data">
+                    <input type="file" id="imagem" name="imagem" accept="image/*">
+                </form>
+                <form style="width:90%" class="p-3 " method="post" action="../../php/funcionarios_crud/funcionarios_post.php">
+                    <h4 class="mb-4 title">Cadastrar Novo Funcionario</h4>
+                    <hr> 
+                    <input class="input mb-2" type="text" name="nome_funcionario" placeholder="Digite o Nome" required>
+                    <input class="input mb-2" type="text" name="cpf_funcionario" placeholder="Digite o CPF" required><br>
+                    <input class="input mb-2" type="text" name="salario_funcionario" placeholder="Digite o Salario" required>
+                    <input class="input mb-2" type="text" name="telefone_funcionario" placeholder="Digite o Telefone" required><br>
+                    <input class="input mb-2 endereco" type="text" name="endereco_funcionario" placeholder="Digite o Endereço" required><br>
+                    <button type="submit" class="btn btn-primary input form">CADASTRAR</button>
+                </form>
+            </div>
         </div>
     </div>
 </body>
+<script>
+    document.getElementById('imagem').addEventListener('change', function() {
+        document.getElementById('uploadForm').submit();
+    });
+
+    document.querySelector('.imagem-perfil').addEventListener('click', function() {
+        document.getElementById('imagem').click();
+    });
+</script>
 </html>

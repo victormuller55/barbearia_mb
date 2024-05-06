@@ -105,3 +105,14 @@ button.input.form {
 button.input.form:hover {
     background-color: #1c2f5b;
 }
+
+.imagem-perfil {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(212, 212, 212);
+}
+
+.escolher-imagem input[type="file"] {
+    display: none;
+}

@@ -37,15 +37,16 @@ $servico = $servicoModel->buscarServicoPorID($id);
                     <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option"><i class="fa-solid fa-user mr-3 ml-2"></i>Meu Perfil</div></a></li>
                </ul>
             </div>
-            <form style="width:90%" class="p-3 " method="post" action="../../php/servicos_crud/servicos_post.php">
+            <form style="width:90%" class="p-3 " method="post" action="../../php/servicos_crud/servicos_update.php">
                 <h3 class="mb-4 title">Alteração de Serviços</h3>
                 <hr>
-                <input class="input mb-2" type="text" name="cliente_servico" placeholder="Digite o nome do cliente" required>
-                <input class="input mb-2" type="text" name="funcionario_servico" placeholder="Digite o nome do funcionário" required><br>
-                <input class="input mb-2" type="text" name="servico" placeholder="Digite o serviço" required>
-                <input class="input mb-2" type="text" name="data_hora" placeholder="Digite a data/hora" required><br>
-                <textarea row="3" class="input textarea mb-2" type="text" name="obs" placeholder="Observaçôes" required></textarea><br>
-                <button type="submit" class="btn btn-primary input form">CADASTRAR NOVO SERVIÇO</button>
+                <input class="input mb-2" type="hidden" name="id_servico" value="<?= $servico['id_servico'] ?>" required>
+                <input class="input mb-2" type="text" name="cliente_servico" value="<?= $servico['cliente_servico'] ?>" placeholder="Digite o nome do cliente" required>
+                <input class="input mb-2" type="text" name="funcionario_servico" value="<?= $servico['funcionario_servico'] ?>" placeholder="Digite o nome do funcionário" required><br>
+                <input class="input mb-2" type="text" name="servico" value="<?= $servico['servico'] ?>" placeholder="Digite o serviço" required>
+                <input class="input mb-2" type="text" name="data_hora" value="<?= $servico['data_hora'] ?>" placeholder="Digite a data/hora" required><br>
+                <textarea row="3" class="input textarea mb-2" type="text" name="obs" value="<?= $servico['obs_servico'] ?>" placeholder="Observaçôes" required></textarea><br>
+                <button type="submit" class="btn btn-primary input form">SALVAR DADOS</button>
             </form>
         </div>
     </div>    

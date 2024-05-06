@@ -92,6 +92,20 @@ class ServicoModel {
         }
     } 
 
+    public function atualizarServico($id) {
+
+        include ("../../conexao_db/conexao.php");
+
+        $sql = "UPDATE tbl_servico SET cliente_servico='$this->cliente', funcionario_servico='$this->funcionario', servico='$this->servico', data_hora='$this->dataHora', obs_servico='$this->obs' WHERE id_servico='$id';";
+
+        try {
+            mysqli_query($conn, $sql);
+            header("location: ../../menu/servicos_page/vizualizar_servicos.php");
+        } catch (Exception $e) {
+            die("Erro ao alterar serviço: $e");
+        }
+        
+    }
 
 }
 ?>
