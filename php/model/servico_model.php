@@ -54,8 +54,24 @@ class ServicoModel {
         } catch (Exception $e) {
             die("Erro ao excluir serviço: $e");
         }
-
     }
+
+    public function buscarServicoPorID($id) {
+        include ("../../conexao_db/conexao.php");
+
+        $sql = "SELECT * FROM tbl_servico WHERE id_servico = '$id'";
+        $result = mysqli_query($conn, $sql);
+
+        try {
+            
+            $servico = mysqli_fetch_assoc($result);
+            return $servico;
+        
+        } catch (Exception $e) {
+            die("Erro ao buscar serviços: $e");
+        }
+    }
+
 
     public function buscarServico($query) {
         include("../../conexao_db/conexao.php");

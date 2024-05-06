@@ -69,7 +69,7 @@
                               <td><?= $row_servico['servico'] ?></td>
                               <td><?= $row_servico['data_hora'] ?></td>
                               <td><?= $row_servico['obs_servico'] ?></td>
-                              <td class="options"><a style="text-decoration: none; color: black" href=""><i class="fa-solid fa-pen"></i></a></td>
+                              <td class="options"><a style="text-decoration: none; color: black" href="atualizar_servicos.php?id_servico=<?= $row_servico['id_servico']?>"><i class="fa-solid fa-pen"></i></a></td>
                               <td class="options"><a style="text-decoration: none; color: black" onclick="confirmaExclusaoServico(<?= $row_servico['id_servico'] ?>)" href="#"><i class="fa-solid fa-trash"  style="color: red"></i></a></td>
                            </tr>
                      <?php endforeach; ?>
