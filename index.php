@@ -1,3 +1,14 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION["email"])){
+    header("Location: menu/servicos_page/vizualizar_servicos.php");
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

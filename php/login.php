@@ -10,10 +10,9 @@ $usuario->email = $email;
 $usuario->senha = $senha;
 
 if ($usuario->login()) {
-    
-    $usuario->login();
 
-    header("Location: ../menu/servicos_page/vizualizar_servicos.php");
+    $usuarioEncontrado = $usuario->login();
+    header("Location: ../menu/home_page/home.php");
 } else {
     header("Location: ../index.php?error=login_failed");
 }

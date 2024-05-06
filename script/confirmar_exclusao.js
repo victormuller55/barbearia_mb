@@ -5,7 +5,6 @@ function confirmaExclusaoServico(id) {
 }
 
 function confirmaExclusaoFuncionario(id) {
-
     if (confirm("Você realmente deseja excluir este funcionario?")) {
         window.location.assign("../../php/funcionarios_crud/funcionarios_delete.php?id_funcionario=" + id);
     }

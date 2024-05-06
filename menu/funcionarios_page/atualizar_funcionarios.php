@@ -29,13 +29,12 @@ $funcionario = $funcionarioClass->buscarFuncionarioPorID($id);
    </header>
     <div class="container-fluid">
         <div class="row flex-row">
-            <div class="sidebar">
+            <div class="sidebar d-none d-md-block">
                <ul style="list-style: none;">
-                    <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5"><i class="fa-solid fa-house mr-3 ml-2"></i>Inicio</div></a></li>
+                    <li><a style="text-decoration: none; color: white;" href="../home_page/home.php"><div class="option mt-5"><i class="fa-solid fa-house mr-3 ml-2"></i>Inicio</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="../servicos_page/vizualizar_servicos.php"><div class="option"><i class="fa-solid fa-scissors mr-3 ml-2"></i>Serviços</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="../funcionarios_page/vizualizar_funcionarios.php"><div class="option"><i class="fa-solid fa-users mr-3 ml-2"></i>Funcionarios</div></a></li>
                     <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option"><i class="fa-solid fa-user mr-3 ml-2"></i>Meu Perfil</div></a></li>
-                    <li><a style="text-decoration: none; color: white;" href="#"><div class="option"><i class="fa-solid fa-right-from-bracket mr-3 ml-2"></i>Sair da Conta</div></a></li>
                </ul>
             </div>
             <form style="width:90%" class="p-3 " method="post" action="../../php/funcionarios_crud/funcionario_update.php">

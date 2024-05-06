@@ -1,0 +1,9 @@
+.title {
+    font-weight: bold;
+    color: #2B488A;
+}
+
+.flex-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+}

@@ -15,7 +15,7 @@ ul, ol {
 }
 
 .sidebar {
-    width: 250px;
+    width: 300px;
     height: 100vh;
     background-color: #1A2E5C;
 }
@@ -38,11 +38,6 @@ ul, ol {
   a {
     text-decoration: none;
     color: white;
-  }
-
-  .flex-row {
-    display: flex;
-    flex-wrap: nowrap;
   }
 
   /* header */

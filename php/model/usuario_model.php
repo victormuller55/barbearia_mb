@@ -24,6 +24,7 @@ class UsuarioModel {
                     session_start();
 
                     $_SESSION["nome"] = $user["nome_usuario"];
+                    $_SESSION["email"] = $user["email_usuario"];
 
                     return $user;
                 } else {

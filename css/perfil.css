@@ -1,0 +1,26 @@
+.flex-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+}
+
+.imagem-perfil {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(212, 212, 212);
+}
+
+.escolher-imagem input[type="file"] {
+    display: none;
+}
+
+.button-sair {
+    height: 35px;
+    width: 200px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 10px;
+    background-color: #d00000;
+}
