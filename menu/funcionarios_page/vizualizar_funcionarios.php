@@ -4,9 +4,10 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Funcionarios | MB Barbearia</title>
-      <link rel="shortcut icon" type="image/png" href="../../imagens/logo.png">
+      <title>Funcionarios | Scissor</title>
+      <link rel="shortcut icon" type="image/png" href="../../imagens/icon.png">
       <script src="../../script/confirmar_exclusao.js"></script>
+      <script src="https://kit.fontawesome.com/47e9777af5.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="../../css/menu.css">
       <link rel="stylesheet" href="../../css/bootstrap.css">
       <link rel="stylesheet" href="../../css/funcionarios.css">
@@ -15,43 +16,39 @@
    <header>
       <nav class="navbar navbar-light justify-content-between header-mb">
          <img src="../../imagens/logo.png" alt="" class="logo">
-         <form class="form-inline" action="#" method="GET">
-            <input class="pl-2 mr-3" type="search" name="query" placeholder="Digite algo para pesquisar..." aria-label="Search">
-            <button type="submit" class="btn btn-primary input">Pesquisar</button>
-         </form>
+         <a href="adicionar_funcionarios.php"><button class="btn btn-primary button-adicionar shadow-none" type="submit">NOVO FUNCIONARIO<i class="fa-solid fa-plus ml-2"></i></button></a>
       </nav>
    </header>
    <div class="container-fluid">
       <div class="row flex-row">
          <div class="sidebar">
           <ul style="list-style: none;">
-            <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5">Inicio</div></a></li>
-            <li><a style="text-decoration: none; color: white;" href="../servicos_page/vizualizar_servicos.php"><div class="option">Serviços</div></a></li>
-            <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option">Funcionarios</div></a></li>
-            <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option">Meu Perfil</div></a></li>
-            <li><a style="text-decoration: none; color: white;" href="#"><div class="option">Sair da Conta</div></a></li>
+               <li><a style="text-decoration: none; color: white;" href="#"><div class="option mt-5"><i class="fa-solid fa-house mr-3 ml-2"></i>Inicio</div></a></li>
+               <li><a style="text-decoration: none; color: white;" href="../servicos_page/vizualizar_servicos.php"><div class="option"><i class="fa-solid fa-scissors mr-3 ml-2"></i>Serviços</div></a></li>
+               <li><a style="text-decoration: none; color: white;" href="#"><div class="option"><i class="fa-solid fa-users mr-3 ml-2"></i>Funcionarios</div></a></li>
+               <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option"><i class="fa-solid fa-user mr-3 ml-2"></i>Meu Perfil</div></a></li>
+               <li><a style="text-decoration: none; color: white;" href="#"><div class="option"><i class="fa-solid fa-right-from-bracket mr-3 ml-2"></i>Sair da Conta</div></a></li>
           </ul>   
         </div>
         <div class="p-3" style="width:90%">
-            <h3 class="title">Funcionarios</h3>
-            <hr>
-            <div class="container-fluid mb-3">
-               <div class="row">
-               <div>
-                  <a href="adicionar_funcionarios.php"><button class="btn btn-primary button-table shadow-none" type="submit">ADICIONAR</button></a>
-               </div>
-               </div>
+            <div class="row justify-content-between pr-3 pl-3">
+               <h3 class="title">Funcionarios</h3>
+               <form class="form-inline" action="#" method="GET">
+                  <input class="pl-2 mr-2 search-form" type="search" name="query" placeholder="Digite algo para pesquisar..." aria-label="Search">
+                  <button type="submit" class="btn btn-primary search-button"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+               </form>
             </div>
+            <hr>
             <table border="1">
             <thead>
                <tr>
-                  <th class="th-first">Nome</th>
+                  <th>Nome</th>
                   <th>CPF</th>
                   <th>Salario</th>
                   <th>Telefone</th>
                   <th>Endereço</th>
-                  <th>Alterar</th>
-                  <th class="th-last">Excluir</th>
+                  <th>&nbsp;</th>
+                  <th>&nbsp;</th>
                </tr>
             </thead>
                <tbody>
@@ -67,8 +64,8 @@
                            <td><?= $row_funcionarios['salario_funcionario'] ?></td>
                            <td><?= $row_funcionarios['telefone_funcionario'] ?></td>
                            <td><?= $row_funcionarios['endereco_funcionario'] ?></td>
-                           <td><a style="text-decoration: none; color: black"href="atualizar_funcionarios.php?id_funcionario=<?= $row_funcionarios['id_funcionario'] ?>">Alterar</a></td>
-                           <td><a style="text-decoration: none; color: black" onclick="confirmaExclusaoFuncionario(<?= $row_funcionarios['id_funcionario'] ?>)" href="#">Excluir</a></td>
+                           <td class="options"><a style="text-decoration: none; color: black"href="atualizar_funcionarios.php?id_funcionario=<?= $row_funcionarios['id_funcionario'] ?>"><i class="fa-solid fa-pen"></i></a></td>
+                           <td class="options"><a style="text-decoration: none; color: black"href="atualizar_funcionarios.php?id_funcionario=<?= $row_funcionarios['id_funcionario'] ?>"><i class="fa-solid fa-trash"  style="color: red"></i></a></td>
                         </tr>
                   <?php endforeach; ?>
                <?php endif; ?>

@@ -1,31 +1,51 @@
-.button-table {
+/* componentes da tela */
+
+.title {
+    font-weight: bold;
+    color: #2B488A;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* botão adicionar  */
+
+.button-adicionar {
     height: 35px;
-    border-radius: 360px;
-    background-color: #2B488A;
-    font-size: 12px;
     width: 200px;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
     margin-right: 10px;
-}
-
-.button-table:hover {
-    font-weight: bold;
-    background-color: #142345;
-}
-
-button.input.form {
-    width: 1005px;
-    font-weight: bold;
-    font-size: 13px;
+    border-radius: 10px;
     background-color: #2B488A;
 }
 
-button.input.form:hover {
-    background-color: #1c2f5b;
+.button-adicionar:hover {
+    background-color: #2B488A;
 }
+
+/* componentes de pesquisa  */
+
+.search-form {
+    font-size: 13px;
+    width: 500px;
+}
+
+.search-button {
+    width: 37px;
+    height: 37px;
+    font-size: 13px;
+    border-radius: 10px;
+    background-color: #2B488A;
+}
+
+/* componentes de tabela  */
 
 table {
-    border-radius: 10px;
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(238, 238, 238);
     width: 100% !important;
 }
 
@@ -45,25 +65,21 @@ th {
 }
 
 td {
-    text-align: center;
     border: solid 1px white;
-    width: calc(100% / 8);
+    padding-left: 10px;
+    width: calc(100% / 5);
     font-size: 14px;
     height: 35px;
 }
 
-.flex-row {
-    display: flex;
-    flex-wrap: nowrap;
+td.options {
+    text-align: center;
+    border: solid 1px white;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.th-first {
-    border-top-left-radius: 10px;
-}
-
-.th-last {
-    border-top-right-radius: 10px;
-}
+/* componentes do formulario  */
 
 .input {
     padding: 10px;
@@ -79,6 +95,13 @@ td {
     width: 1005px;
 }
 
-.title {
-    color: #2B488A;
+button.input.form {
+    width: 1005px;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #2B488A;
+}
+
+button.input.form:hover {
+    background-color: #1c2f5b;
 }
