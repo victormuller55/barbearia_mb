@@ -1,4 +1,4 @@
-   <?php include("../../php/funcionarios_crud/funcionario_get.php"); ?>
+   <?php include("../../php/funcionarios_crud/funcionario_get.php");  ?>
    <!DOCTYPE html>
    <html lang="pt-br">
    <head>
@@ -48,21 +48,28 @@
                   <th>Endereço</th>
                   <th>&nbsp;</th>
                   <th>&nbsp;</th>
+                  <th>&nbsp;</th>
                </tr>
             </thead>
                <tbody>
-               <?php if (empty($funcionarios)) : ?>
+               <?php
+
+               if (empty($funcionarios)) : ?>
                   <tr>
                         <td colspan="7">Nenhum funcionario encontrado.</td>
                   </tr>
                <?php else : ?>
-                  <?php foreach ($funcionarios as $row_funcionarios) : ?>
+                  <?php foreach ($funcionarios as $row_funcionarios) : 
+                     $idFuncionario = $row_funcionarios['id_funcionario'];
+                     include '../../php/funcionarios_crud/load_imagem_funcionario.php';
+                     ?>
                         <tr>
                            <td><?= $row_funcionarios['nome_funcionario'] ?></td>
                            <td><?= $row_funcionarios['cpf_funcionario'] ?></td>
                            <td><?= $row_funcionarios['salario_funcionario'] ?></td>
                            <td><?= $row_funcionarios['telefone_funcionario'] ?></td>
                            <td><?= $row_funcionarios['endereco_funcionario'] ?></td>
+                           <td class="options"><img width="25" height="25" class="rounded" src="<?=$imagem;?>" alt=""></td>
                            <td class="options"><a style="text-decoration: none; color: black"href="atualizar_funcionarios.php?id_funcionario=<?= $row_funcionarios['id_funcionario'] ?>"><i class="fa-solid fa-pen"></i></a></td>
                            <td class="options"><a style="text-decoration: none; color: black"href="atualizar_funcionarios.php?id_funcionario=<?= $row_funcionarios['id_funcionario'] ?>"><i class="fa-solid fa-trash"  style="color: red"></i></a></td>
                         </tr>

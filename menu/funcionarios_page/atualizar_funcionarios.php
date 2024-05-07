@@ -1,12 +1,12 @@
 <?php
+$idFuncionario = $_GET["id_funcionario"]; // Obtenha o ID do funcionário
 
 include("../../php/model/funcionario_model.php");
 
-$id = $_GET["id_funcionario"];
-
 $funcionarioClass = new FuncionarioModel();
-$funcionario = $funcionarioClass->buscarFuncionarioPorID($id);
+$funcionario = $funcionarioClass->buscarFuncionarioPorID($idFuncionario);
 
+include '../../php/funcionarios_crud/load_imagem_funcionario.php'; // Inclua o arquivo
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +48,21 @@ $funcionario = $funcionarioClass->buscarFuncionarioPorID($id);
                 <input class="input mb-2 endereco" type="text" name="endereco_funcionario" placeholder="Digite o Endereço" value="<?= $funcionario['endereco_funcionario'] ?>" required><br>
                 <button type="submit" class="btn btn-primary input form">SALVAR DADOS</button>
             </form>
+            <img class="imagem-perfil mr-3 ml-3" src="<?php echo $imagem;?>" alt="">
+            <form id="uploadForm" class="escolher-imagem" action="../../php/funcionarios_crud/upload_imagem_funcionario.php" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="id_funcionario" value="<?= $funcionario['id_funcionario'] ?>">
+                <input type="file" id="imagem" name="imagem" accept="image/*">
+            </form>
         </div>
     </div>    
 </body>
+<script>
+    document.getElementById('imagem').addEventListener('change', function() {
+        document.getElementById('uploadForm').submit();
+    });
+
+    document.querySelector('.imagem-perfil').addEventListener('click', function() {
+        document.getElementById('imagem').click();
+    });
+</script>
 </html>

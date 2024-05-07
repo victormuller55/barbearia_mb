@@ -11,7 +11,7 @@ $emailUsuario = $_SESSION["email"];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="../../imagens/icon.png">
-    <title>Adicionar Funcionarios | Scissor</title>
+    <title>Meu Perfil | Scissor</title>
     <script src="https://kit.fontawesome.com/47e9777af5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/perfil.css">
     <link rel="stylesheet" href="../../css/bootstrap.css">
