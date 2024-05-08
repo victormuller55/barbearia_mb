@@ -20,7 +20,7 @@ $emailUsuario = $_SESSION["email"];
 <body>
     <header>
       <nav class="navbar navbar-light justify-content-between header-mb">
-         <img src="../../imagens/logo.png" alt="" class="logo">
+        <a href="../home_page/home.php"><img src="../../imagens/logo.png" alt="" class="logo"></a>
       </nav>
    </header>
     <div class="container-fluid">

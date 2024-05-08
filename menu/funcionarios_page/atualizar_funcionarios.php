@@ -24,7 +24,7 @@ include '../../php/funcionarios_crud/load_imagem_funcionario.php'; // Inclua o a
 <body>
     <header>
       <nav class="navbar navbar-light justify-content-between header-mb">
-         <img src="../../imagens/logo.png" alt="" class="logo">
+         <a href="../home_page/home.php"><img src="../../imagens/logo.png" alt="" class="logo"></a>
       </nav>
    </header>
     <div class="container-fluid">
@@ -37,7 +37,7 @@ include '../../php/funcionarios_crud/load_imagem_funcionario.php'; // Inclua o a
                     <li><a style="text-decoration: none; color: white;" href="../perfil_page/perfil.php"><div class="option"><i class="fa-solid fa-user mr-3 ml-2"></i>Meu Perfil</div></a></li>
                </ul>
             </div>
-            <form style="width:90%" class="p-3 " method="post" action="../../php/servico_crud/servicos_update.php">
+            <form style="width:90%" class="p-3" method="post" action="../../php/funcionarios_crud/funcionario_update.php">
                 <h4 class="mb-4 title"><?= $funcionario['nome_funcionario'] ?></h4>
                 <hr>
                 <input type="hidden" name="id_funcionario" value="<?= $funcionario['id_funcionario'] ?>">
@@ -48,11 +48,11 @@ include '../../php/funcionarios_crud/load_imagem_funcionario.php'; // Inclua o a
                 <input class="input mb-2 endereco" type="text" name="endereco_funcionario" placeholder="Digite o Endereço" value="<?= $funcionario['endereco_funcionario'] ?>" required><br>
                 <button type="submit" class="btn btn-primary input form">SALVAR DADOS</button>
             </form>
-            <img class="imagem-perfil mr-3 ml-3" src="<?php echo $imagem;?>" alt="">
+            <!-- <img class="imagem-perfil mr-3 ml-3" src="<?php echo $imagem;?>" alt="">
             <form id="uploadForm" class="escolher-imagem" action="../../php/funcionarios_crud/upload_imagem_funcionario.php" method="POST" enctype="multipart/form-data">
             <input type="hidden" name="id_funcionario" value="<?= $funcionario['id_funcionario'] ?>">
                 <input type="file" id="imagem" name="imagem" accept="image/*">
-            </form>
+            </form> -->
         </div>
     </div>    
 </body>

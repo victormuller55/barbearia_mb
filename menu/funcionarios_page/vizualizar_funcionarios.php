@@ -15,7 +15,7 @@
    <body>
    <header>
       <nav class="navbar navbar-light justify-content-between header-mb">
-         <img src="../../imagens/logo.png" alt="" class="logo">
+         <a href="../home_page/home.php"><img src="../../imagens/logo.png" alt="" class="logo"></a>
          <a href="adicionar_funcionarios.php"><button class="btn btn-primary button-adicionar shadow-none" type="submit">NOVO FUNCIONARIO<i class="fa-solid fa-plus ml-2"></i></button></a>
       </nav>
    </header>
@@ -48,7 +48,7 @@
                   <th>Endereço</th>
                   <th>&nbsp;</th>
                   <th>&nbsp;</th>
-                  <th>&nbsp;</th>
+                  <!-- <th>&nbsp;</th> -->
                </tr>
             </thead>
                <tbody>
@@ -69,9 +69,9 @@
                            <td><?= $row_funcionarios['salario_funcionario'] ?></td>
                            <td><?= $row_funcionarios['telefone_funcionario'] ?></td>
                            <td><?= $row_funcionarios['endereco_funcionario'] ?></td>
-                           <td class="options"><img width="25" height="25" class="rounded" src="<?=$imagem;?>" alt=""></td>
+                           <!-- <td class="options"><img width="25" height="25" class="rounded" src="<?=$imagem;?>" alt=""></td> -->
                            <td class="options"><a style="text-decoration: none; color: black"href="atualizar_funcionarios.php?id_funcionario=<?= $row_funcionarios['id_funcionario'] ?>"><i class="fa-solid fa-pen"></i></a></td>
-                           <td class="options"><a style="text-decoration: none; color: black"href="atualizar_funcionarios.php?id_funcionario=<?= $row_funcionarios['id_funcionario'] ?>"><i class="fa-solid fa-trash"  style="color: red"></i></a></td>
+                           <td class="options"><a style="text-decoration: none; color: black" onclick="confirmaExclusaoFuncionario(<?= $row_funcionarios['id_funcionario'] ?>)" href="#"><i class="fa-solid fa-trash"  style="color: red"></i></a></td>
                         </tr>
                   <?php endforeach; ?>
                <?php endif; ?>
