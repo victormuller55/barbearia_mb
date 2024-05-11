@@ -4,7 +4,9 @@ This project was created as a final assignment for a PHP course. It is a managem
 
 ## Features:
 
-- Appointment Management: Schedule and manage appointments for customers.
+- It's possible to save and manage the barbershop clients
+- It's possible to save and manage the services scheduled
+- It's possible to edit the account infos.
 
 ## Technologies Used:
 
