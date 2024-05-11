@@ -23,11 +23,13 @@ This project was created as a final assignment for a PHP course. It is a managem
 4. Configure the database connection in the PHP files (config.php or similar).
 5. Open the project in your web browser and start using the system.
 
- ## SQL Scripts:
- 
- ```sql
-
+## SQL Scripts:
+### Create Database
+``` sql
 CREATE DATABASE db_barbearia;
+```
+### Create Table User
+ ```sql
 
 CREATE TABLE tbl_usuario (
 id_usuario int NOT NULL AUTO_INCREMENT,
@@ -36,6 +38,10 @@ email_usuario varchar(50) DEFAULT NULL,
 senha_usuario varchar(50) DEFAULT NULL,
 PRIMARY KEY (id_usuario)
 );
+
+```
+### Create Table Services
+ ```sql
 
 CREATE TABLE `tbl_servico` (
   `id_servico` int NOT NULL AUTO_INCREMENT,
@@ -47,6 +53,11 @@ CREATE TABLE `tbl_servico` (
   PRIMARY KEY (`id_servico`)
 );
 
+```
+
+### Create Table Employes
+```sql
+
 CREATE TABLE `tbl_funcionario` (
   `id_funcionario` int NOT NULL AUTO_INCREMENT,
   `nome_funcionario` varchar(50) DEFAULT NULL,
@@ -56,6 +67,10 @@ CREATE TABLE `tbl_funcionario` (
   `endereco_funcionario` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id_funcionario`)
 );
+
+```
+### Create Image Tables
+```sql
 
 CREATE TABLE `imagens_funcionario` (
   `id` int NOT NULL AUTO_INCREMENT,
