@@ -25,7 +25,8 @@ This project was created as a final assignment for a PHP course. It is a managem
 
  ## SQL Scripts:
  
- ```
+ ```sql
+
 CREATE DATABASE db_barbearia;
 
 CREATE TABLE tbl_usuario (
