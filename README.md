@@ -29,7 +29,7 @@ This project was created as a final assignment for a PHP course. It is a managem
 CREATE DATABASE db_barbearia;
 ```
 ### Create Table User
- ```sql
+```sql
 
 CREATE TABLE tbl_usuario (
 id_usuario int NOT NULL AUTO_INCREMENT,
@@ -41,47 +41,46 @@ PRIMARY KEY (id_usuario)
 
 ```
 ### Create Table Services
- ```sql
+```sql
 
-CREATE TABLE `tbl_servico` (
-  `id_servico` int NOT NULL AUTO_INCREMENT,
-  `cliente_servico` varchar(50) DEFAULT NULL,
-  `funcionario_servico` varchar(50) DEFAULT NULL,
-  `servico` varchar(50) DEFAULT NULL,
-  `data_hora` varchar(50) DEFAULT NULL,
-  `obs_servico` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_servico`)
+CREATE TABLE tbl_servico (
+  id_servico int NOT NULL AUTO_INCREMENT,
+  cliente_servico varchar(50) DEFAULT NULL,
+  funcionario_servico varchar(50) DEFAULT NULL,
+  servico varchar(50) DEFAULT NULL,
+  data_hora varchar(50) DEFAULT NULL,
+  obs_servico varchar(50) DEFAULT NULL,
+  PRIMARY KEY (id_servico)
 );
 
 ```
-
 ### Create Table Employes
 ```sql
 
-CREATE TABLE `tbl_funcionario` (
-  `id_funcionario` int NOT NULL AUTO_INCREMENT,
-  `nome_funcionario` varchar(50) DEFAULT NULL,
-  `cpf_funcionario` varchar(50) DEFAULT NULL,
-  `salario_funcionario` varchar(50) DEFAULT NULL,
-  `telefone_funcionario` varchar(50) DEFAULT NULL,
-  `endereco_funcionario` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_funcionario`)
+CREATE TABLE tbl_funcionario (
+  id_funcionario int NOT NULL AUTO_INCREMENT,
+  nome_funcionario varchar(50) DEFAULT NULL,
+  cpf_funcionario varchar(50) DEFAULT NULL,
+  salario_funcionario varchar(50) DEFAULT NULL,
+  telefone_funcionario varchar(50) DEFAULT NULL,
+  endereco_funcionario varchar(50) DEFAULT NULL,
+  PRIMARY KEY (id_funcionario)
 );
 
 ```
 ### Create Image Tables
 ```sql
 
-CREATE TABLE `imagens_funcionario` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `imagem` mediumblob,
-  `id_funcionario` int DEFAULT NULL,
-  PRIMARY KEY (`id`)
+CREATE TABLE imagens_funcionario (
+  id int NOT NULL AUTO_INCREMENT,
+  imagem mediumblob,
+  id_funcionario int DEFAULT NULL,
+  PRIMARY KEY (id)
 );
 
-CREATE TABLE `imagens` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `imagem` mediumblob,
-  PRIMARY KEY (`id`)
+CREATE TABLE imagens (
+  id int NOT NULL AUTO_INCREMENT,
+  imagem mediumblob,
+  PRIMARY KEY (id)
 );
 ```
