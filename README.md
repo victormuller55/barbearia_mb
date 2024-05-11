@@ -46,7 +46,7 @@ PRIMARY KEY (id_usuario)
 CREATE TABLE `tbl_servico` (
   `id_servico` int NOT NULL AUTO_INCREMENT,
   `cliente_servico` varchar(50) DEFAULT NULL,
-  `funcionario_servico` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `funcionario_servico` varchar(50) DEFAULT NULL,
   `servico` varchar(50) DEFAULT NULL,
   `data_hora` varchar(50) DEFAULT NULL,
   `obs_servico` varchar(50) DEFAULT NULL,
