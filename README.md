@@ -6,7 +6,7 @@ This project was created as a final assignment for a PHP course. It is a managem
 
 - It's possible to save and manage the barbershop clients
 - It's possible to save and manage the services scheduled
-- It's possible to edit the account infos.
+- It's possible to edit the account info.
 
 ## Technologies Used:
 
